@@ -1,33 +1,32 @@
-resultado = ''
 loop do
-  puts resultado 
-  puts 'Selecione uma opção:'
-  puts '1- Soma.'
-  puts '2- Subtração.'
-  puts '3- Multiplicação.'
-  puts '4- Divisão.'
-  puts '0- Sair.'
-  print 'Digite sua escolha: '
+  puts ' '
+  puts 'Select an option:'
+   puts '1- Sum.'
+   puts '2- Subtraction.'
+   puts '3- Multiplication.'
+   puts '4- Division.'
+   puts '0- Exit.'
+   print 'Enter your choice: '
 
-  opcao = gets.chomp.to_i
+  option = gets.chomp.to_i
   
-  if opcao != 0 && opcao >= 1 && opcao <= 5 
-    print "Digite o primeiro número: "
+  if option != 0 && option >= 1 && option <= 5 
+    print "Enter the first number: "
     num1 = gets.chomp.to_i
-    print "Digite o segundo número: "
+    print "Enter the second number: "
     num2 = gets.chomp.to_i
   end
   
-  case opcao
-    when opcao = 1
+  case option
+    when option = 1
       operation = num1 + num2
-    when opcao = 2
+    when option = 2
       operation = num1 - num2
-    when opcao = 3
+    when option = 3
       operation = num1 * num2
-    when opcao = 4
+    when option = 4
       operation = num1 / num2
-    when opcao = 0 
+    when option = 0 
         break
     end
     puts ' '
